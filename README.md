@@ -1,14 +1,14 @@
-# CodeItNow Barcode & QrCode Generator
-Barcode and Qr Code generator library by [CodeItNow](http://www.codeitnow.in). You can use it with Custom PHP application or any PHP Framework such as Laravel, Symfony, Cakephp, Yii, Codeigneter etc.
+# TheUmar98 Barcode & QrCode Generator
+Barcode and Qr Code generator library by [TheUmar98](http://www.theumar98.com). You can use it with Custom PHP application or any PHP Framework such as Laravel, Symfony, Cakephp, Yii, Codeigneter etc.
 
 ## Requirements
 You must have php >= 5.3.2 installed and GD extension enabled.
 
 ## Installation - 
-CodeItNow Barcode & Qr Code Generator can install by composer.
+TheUmar98 Barcode & Qr Code Generator can install by composer.
 
 ```
-composer require codeitnowin/barcode
+composer require theumar98/barcode
 ``` 
 
 ## Uses -
@@ -16,11 +16,11 @@ Barcode and Qr Code Generator library give output as base64 encoded png image.
 
 ### Example - QrCode:
 ```php
-use CodeItNow\BarcodeBundle\Utils\QrCode;
+use TheUmar98\BarcodeBundle\Utils\QrCode;
 
 $qrCode = new QrCode();
 $qrCode
-    ->setText('QR code by codeitnow.in')
+    ->setText('QR code by theumar98.in')
     ->setSize(300)
     ->setPadding(10)
     ->setErrorCorrection('high')
@@ -33,11 +33,11 @@ $qrCode
 echo '<img src="data:'.$qrCode->getContentType().';base64,'.$qrCode->generate().'" />';
 ```
 ### Sample Image - QrCode:
-![CodeItNow QrCode Generator](/CodeItNow/BarcodeBundle/Resources/image/sample_qrcode.png?raw=true)
+![TheUmar98 QrCode Generator](/TheUmar98/BarcodeBundle/Resources/image/sample_qrcode.png?raw=true)
 
 ### Example - Code128:
 ```php
-use CodeItNow\BarcodeBundle\Utils\BarcodeGenerator;
+use TheUmar98\BarcodeBundle\Utils\BarcodeGenerator;
 
 $barcode = new BarcodeGenerator();
 $barcode->setText("0123456789");
